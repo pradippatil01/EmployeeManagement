@@ -1,0 +1,157 @@
+body{
+margin: 0;
+height: 100%;
+background-image: url('../assest/employmentBG.png');
+background-size: cover;
+position: relative;
+background-repeat: no-repeat;
+}
+
+.header{
+    padding: 9px 0;
+    background-color: white;
+}
+.header-content{
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+}
+.logo-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid blue;
+    width: 80%;
+}
+.logo-content-img{
+    border: solid 0px #42515f;
+}
+
+.emp-text{
+    font: normal normal bold 15px/20px Montseraat;
+    font-family: "Montseraat", sans-serif;
+    letter-spacing: 0px;
+    color:#008CFF;
+    text-transform: capitalize;
+}
+  
+
+.emp-payroll{
+    color: #42515f;
+}
+
+*{
+box-sizing: border-box;
+
+}
+
+.form-content{
+    min-height: calc(100% - 80px);
+    /* background-color: #f7f7f7; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.form{
+    width: 50%;
+    padding: 1px 1px;
+    background:white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    /* border: 1px solid #F5F5F5; */
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.head{
+    background:skyblue 0% 0% no-repeat padding-box;
+    padding: 9px 10px;
+    border-radius: 5px;
+    opacity: 1;
+}
+.form-head{
+    font:  normal normal normal  24px/37px Roboto;
+    letter-spacing: 0px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom:3px;
+}
+
+.row-content{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.label{
+max-width: 100px;
+width:20%;
+}
+
+.text{
+    font-size: 13px;
+    margin-left: 8%;
+    color: #42515f;
+    opacity: 1;
+    font-family: Roboto;
+}
+
+.input{
+    width: 70%;
+    margin-left: 8%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius:  0px;
+    resize: vertical;
+}
+
+select {
+    margin-left: 8%;
+    padding: 7px;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+    font: normal normal normal 14px Roboto;
+    letter-spacing: 0px;
+    color: ■#42515f;
+    background-color: transparent;
+    margin-bottom: 10px;
+  }
+  
+  .submitButton, .resetButton{
+    margin-bottom: 14px;
+    margin-left: 15%;
+    font-size: 17px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    background-color: #f5f5f5;
+    color: #42515f;
+    opacity: 1;
+    border: none;
+    font-weight: 400;
+    min-width: 130px;
+    padding: 5px 5px;
+    border: 1px solid #707070;
+    cursor: pointer;
+  }
+
+
+  .DisplayBtn{
+    margin-left: 745%;
+    color:  #42515f;
+    opacity: 1;
+    border: none;
+    font-weight: 400;
+    min-width: 100px;
+    padding: 5px 5px;
+    border: 1px solid #42515f;
+    cursor: pointer;
+  }

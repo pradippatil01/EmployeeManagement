@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Employee.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <title>EmployeeManagementSystem</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assest/logo.png" alt="">
+            <div>
+                <span class="emp-text">Employee</span><br>
+                <span class="emp-text emp-payroll">Management System</span>
+           </div>
+           <div>
+            <a href="../html/Dashboard.html"><button class="DisplayBtn" >Dashboard</button></a>
+           </div>
+        </div>
+    </header>
+    <div id="formId" class="form-content">
+        <form class="form" autocomplete="off">
+            <div class="head">
+                <!-- code for heading -->
+                <div class="form-head">Insert Employee data</div>
+            </div> <!-- head -->
+            <span>
+                <label class="label text" for="firstName">First Name</label>
+            </span>
+            <div class="row-content">
+                <input class="input" type="text" id="name" name="name" placeholder="" required>
+            </div>
+            <span>
+                <label class="label text" for="lastName">Last Name</label>
+            </span>
+            <div class="row-content">
+                <input class="input" type="text" id="name" name="lastName" placeholder="" required>
+            </div>
+            <span>
+                <label class="label text" for="gender">Gender</label>
+            </span>
+            <div class="row—content">
+                <select class="select" type="select" name="gender" id="gender" placeholder="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <!-- code  for phonenumber -->
+            <span>
+                <label class="label text" for="phoneNumber">Phone Number</label>
+            </span>
+            <div class="row-content">
+                <input class="input" type="text" id="phone" name="phoneNumber" placeholder="" required>
+            </div>
+            <!--code for salary input-->
+            <span>
+                <label class="label text" for="salary">Emp salary</label>
+            </span>
+            <div class="row-content">
+                <input class="input" type="text" id="salary" name="salary" placeholder="" required>
+            </div>
+            <!--code for EmailID-->
+            <span>
+                <label class="label text" for="email">EmailID</label>
+            </span>
+            <div class="row-content">
+                <input class="input" type="text" id="email" name="email" placeholder="" required>
+            </div>
+            <!--code for city-->
+            <span>
+                <label class="label text" for="city">City</label>
+            </span>
+            <div class="row-content">
+                <input class="input" type="text" id="city" name="city" placeholder="" required>
+            </div>
+            <!--code for department-->
+            <span>
+                <label class="label text" for="department">Department</label>
+            </span>
+            <div class="row-content">
+                <input class="input" type="text" id="department" name="department" placeholder="" required>
+            </div>
+            <!-- code for button -->
+            <div>
+                <button type="submit" class="submitButton" id="submitButton">Submit</button>
+                <button type="reset" class="resetButton" id="resetButton">Reset</button>
+            </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    <!--form-content-->
+</body>
+</html>
