@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Employee.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <script defer src="../js/Home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>EmployeeManagementSystem</title>
 </head>
+
 <body>
     <!-- header -->
     <header class="header-content header">
@@ -17,30 +18,35 @@
             <div>
                 <span class="emp-text">Employee</span><br>
                 <span class="emp-text emp-payroll">Management System</span>
-           </div>
-           <div>
-            <a href="../html/Dashboard.html"><button class="DisplayBtn" >Dashboard</button></a>
-           </div>
+            </div>
+            <div>
+                <a href="../html/Dashboard.html"><button class="DisplayBtn">Dashboard</button></a>
+            </div>
         </div>
     </header>
     <div id="formId" class="form-content">
-        <form class="form" autocomplete="off">
+        <form class="form" autocomplete="off" action="#" onreset="resetForm()" onsubmit="register(event);return false">
             <div class="head">
                 <!-- code for heading -->
                 <div class="form-head">Insert Employee data</div>
             </div> <!-- head -->
+            <!--code for firstName-->
             <span>
                 <label class="label text" for="firstName">First Name</label>
             </span>
             <div class="row-content">
-                <input class="input" type="text" id="name" name="name" placeholder="" required>
+                <input class="input" type="text" id="firstName" name="firstName" placeholder="please enter firstName"
+                    required>
             </div>
+            <!--code for lastName-->
             <span>
                 <label class="label text" for="lastName">Last Name</label>
             </span>
             <div class="row-content">
-                <input class="input" type="text" id="name" name="lastName" placeholder="" required>
+                <input class="input" type="text" id="lastName" name="lastName" placeholder="please enter lastName"
+                    required>
             </div>
+            <!--code for gender-->
             <span>
                 <label class="label text" for="gender">Gender</label>
             </span>
@@ -55,7 +61,7 @@
                 <label class="label text" for="phoneNumber">Phone Number</label>
             </span>
             <div class="row-content">
-                <input class="input" type="text" id="phone" name="phoneNumber" placeholder="" required>
+                <input class="input" type="text" id="phoneNumber" name="phoneNumber" placeholder="" required>
             </div>
             <!--code for salary input-->
             <span>
@@ -66,34 +72,34 @@
             </div>
             <!--code for EmailID-->
             <span>
-                <label class="label text" for="email">EmailID</label>
+                <label class="label text" for="emailID">EmailID</label>
             </span>
             <div class="row-content">
-                <input class="input" type="text" id="email" name="email" placeholder="" required>
+                <input class="input" type="text" id="emailID" name="emailID" placeholder="" required>
             </div>
-            <!--code for city-->
-            <span>
+             <!--code for city-->
+             <span>
                 <label class="label text" for="city">City</label>
             </span>
-            <div class="row-content">
+            <div class="row-content">  
                 <input class="input" type="text" id="city" name="city" placeholder="" required>
             </div>
-            <!--code for department-->
-            <span>
+               <!--code for department-->
+               <span>
                 <label class="label text" for="department">Department</label>
             </span>
             <div class="row-content">
                 <input class="input" type="text" id="department" name="department" placeholder="" required>
             </div>
-            <!-- code for button -->
+         
+            <!--SubmitButton-->
             <div>
                 <button type="submit" class="submitButton" id="submitButton">Submit</button>
                 <button type="reset" class="resetButton" id="resetButton">Reset</button>
             </div>
-    </div>
-    </div>
-    </form>
+        </form>
     </div>
     <!--form-content-->
 </body>
+
 </html>

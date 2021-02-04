@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/new_home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
     <title>Employee payroll App</title>
 </head>
+
 <body>
-    <!-- UC1 -->
     <header class="header-content header">
         <div class="logo-content">
             <img src="../assest/logo.png" alt="">
@@ -20,9 +22,27 @@
             </div>
         </div>
     </header>
-</div>
-<a href="../html/Home.html" class="add-button">
-    <img src="../assest/addbtn.svg" alt="">Add User</a>
-</div>
-    </body>
-    </html>
+    <div class="main-content">
+        <div class="header-content">
+            <a href="../html/Home.html" class="add-button">
+                <img src="../assest/addbtn.svg" alt="">Add User</a>
+        </div>
+        <div class="table-main">
+            <table id="customer" class="table">
+                    <tr>
+                      <th scope="col">FirstName</th>
+                      <th scope="col">LastName</th>
+                      <th scope="col">Gender</th>
+                      <th scope="col">PhoneNumber</th>
+                      <th scope="col">Salary</th>
+                      <th scope="col">EmailID</th>
+                      <th scope="col">City</th>   
+                      <th scope="col">Department</th>    
+                      <th scope="col">Edit</th>
+                      <th scope="col">Delete</th>                   
+                    </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
