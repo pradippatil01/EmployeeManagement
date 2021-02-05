@@ -40,8 +40,8 @@ deleteEmpData = (id) => {
         url: ("http://localhost:3000/employee/" + employeeId),
 
         success: (result) => {
-            alert("Employee " + result.data.firstName + " " + result.data.lastName + " Deleted Successfully..!")
             location.reload();
+            alert("Employee " + result.data.firstName + " " + result.data.lastName + " Deleted Successfully..!")
         },
 
         error: (err) => {
@@ -58,7 +58,7 @@ getDataById = (id) => {
     let employeeId = empIdArray[id];
         localStorage.setItem("id", employeeId);
         console.log("local " + localStorage.getItem("id"))
-        window.open("http://127.0.0.1:5500/html/Home.html?", target = "_self");
+        window.open("http://127.0.0.1:5500/html/Home.html", target = "_self");
 }
 
 addNewEmployee=()=>{

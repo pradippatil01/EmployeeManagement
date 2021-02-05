@@ -53,10 +53,12 @@ register = () => {
 
 
 onLoad=()=>{
-    if (localStorage.getItem("id") === null) {
-        document.getElementById("submitButton").innerHTML = "Submit";
-    }
+    if (localStorage.getItem("id") == null) {
+        localStorage.clear();
+        }
     else {
+        document.getElementsByClassName('form-head').innerHTML='update employee data';
+        document.getElementById("submitButton").innerHTML = "Update";
         console.log("Local Storage = " + localStorage.getItem("id"))
         let employeeId = localStorage.getItem("id")
         $.ajax({
@@ -82,7 +84,7 @@ onLoad=()=>{
     }
 }
 
-const resetForm = () => {
+var resetForm = () => {
         setValue('#firstName', '');
         setValue('#lastName', '');
         setValue('#gender', 'Male');
@@ -91,8 +93,7 @@ const resetForm = () => {
         setValue('#emailID', '');
         setValue('#city', '');
         setValue('#department', '');
-        let id = localStorage.getItem("id");
-        localStorage.removeItem(id);
+        localStorage.clear();
         document.getElementById("submitButton").innerHTML = "Submit";
         location.reload();
 }
