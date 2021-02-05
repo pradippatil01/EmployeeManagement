@@ -103,4 +103,16 @@ th {
    border: 0px solid #dddddd;
  }
  
+ 
+ .DisplayBtn{
+   margin-left: 745%;
+   color:  #42515f;
+   opacity: 1;
+   border: none;
+   font-weight: 400;
+   min-width: 100px;
+   padding: 5px 5px;
+   border: 1px solid #42515f;
+   cursor: pointer;
+ }
 

@@ -1,5 +1,6 @@
+
 register =  (event) => {
-    var employeeData = {
+    let employeeData = {
         "firstName": document.getElementById("firstName").value,
         "lastName": document.getElementById("lastName").value,
         "gender": document.getElementById("gender").value,
@@ -9,18 +10,20 @@ register =  (event) => {
         "city":document.getElementById("city").value,
         "department": document.getElementById("department").value
     }
-    console.log(employeeData);
+    
     $.ajax({
+        type: "post",
         url: 'http://localhost:3000/employee/register',
-        type: "POST",
-        body: JSON.stringify(employeeData), 
-        ContentType: 'application/json',
+        data: JSON.stringify(employeeData), 
+        contentType: 'application/json',
         success: function (result) {
             console.log(result);
             if (result.success == false) {
                 alert("Invalid Input..!!");
             }else{
                 alert('Data added..!!',result);
+               // window.open("http://127.0.0.1:5500/html/Dashboard.html#", target = "_self");
+                resetForm();
             }
         },
         error: function (error) {
@@ -45,3 +48,4 @@ const setValue = (id, value) => {
     const element = document.querySelector(id);
     element.value = value;
 }
+

@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/new_home.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/dashboard.css">
+    <script defer src="../js/Dashboard.js"></script>
     <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
     <title>Employee payroll App</title>
 </head>
-
 <body>
     <header class="header-content header">
         <div class="logo-content">
@@ -28,19 +26,21 @@
                 <img src="../assest/addbtn.svg" alt="">Add User</a>
         </div>
         <div class="table-main">
-            <table id="customer" class="table">
+            <table id="employee_data" class="table">
+                <thead>
                     <tr>
-                      <th scope="col">FirstName</th>
-                      <th scope="col">LastName</th>
-                      <th scope="col">Gender</th>
-                      <th scope="col">PhoneNumber</th>
-                      <th scope="col">Salary</th>
-                      <th scope="col">EmailID</th>
-                      <th scope="col">City</th>   
-                      <th scope="col">Department</th>    
-                      <th scope="col">Edit</th>
-                      <th scope="col">Delete</th>                   
+                      <th >firstName</th>
+                      <th>lastName</th>
+                      <th>gender</th>
+                      <th>phoneNumber</th>
+                      <th>salary</th>
+                      <th>emailID</th>
+                      <th>city</th>   
+                      <th>department</th>    
+                      <th>Edit</th>
+                      <th>Delete</th>                   
                     </tr>
+                </thead>
             </table>
         </div>
     </div>
