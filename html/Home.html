@@ -10,7 +10,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>EmployeeManagementSystem</title>
 </head>
-
 <body>
     <!-- header -->
     <header class="header-content header">
@@ -26,7 +25,7 @@
         </div>
     </header>
     <div id="formId" class="form-content">
-        <form class="form" autocomplete="off" action="#" onreset="resetForm()" onsubmit="register(event);return false">
+        <form class="form" autocomplete="off" action="#" onreset="resetForm()" onsubmit="register();return false">
             <div class="head">
                 <!-- code for heading -->
                 <div class="form-head">Insert Employee data</div>
@@ -95,12 +94,12 @@
          
             <!--SubmitButton-->
             <div>
-                <button type="submit" class="submitButton" id="submitButton">Submit</button>
+                <button type="submit" class="submitButton" id="submitButton" onsubmit="register()">Submit</button>
                 <button type="reset" class="resetButton" id="resetButton">Reset</button>
             </div>
         </form>
     </div>
     <!--form-content-->
 </body>
-
+<body onload="onLoad()"></body>
 </html>

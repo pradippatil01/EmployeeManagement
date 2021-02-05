@@ -30,8 +30,9 @@ $(document).ready(function () {
         }
     });
 });
-
-// Deletes Employee data from data base
+/**
+ * @method deleteEmpData delete data from database and reload page
+ */
 deleteEmpData = (id) => {
     let employeeId = empIdArray[id];
     $.ajax({
@@ -50,3 +51,16 @@ deleteEmpData = (id) => {
 
 }
 
+/**
+ * @method getDataById getdata and edit data
+ */
+getDataById = (id) => {
+    let employeeId = empIdArray[id];
+        localStorage.setItem("id", employeeId);
+        console.log("local " + localStorage.getItem("id"))
+        window.open("http://127.0.0.1:5500/html/Home.html?", target = "_self");
+}
+
+addNewEmployee=()=>{
+    localStorage.removeItem("id");
+}
